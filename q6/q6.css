@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(229, 230, 231);
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120%;
+    height: 100%;
+    background: rgb(243, 244, 245);
+    font-size: 0.8rem;
+  }
+  
+  .geom {
+    width: 175px;
+    height: 167px;
+    flex-shrink: 0;
+    background-color: #007cef;
+  }
+  .top-geom {
+    border-radius: 0px 0px 0px 150px;
+  }
+  
+  .geom1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+  }
+  
+  .geom2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    width: 100%;
+  }
+  
+  .bottom-geom {
+    border-radius: 0px 150px 0px 0px;
+  }
+  
+  .container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    height: 498px;
+    width: 80%;
+  }
+  
+  .all {
+    position: relative;
+    text-align: center;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    flex-grow: 2;
+    border: 1px solid white;
+    width: 70%;
+    box-shadow: 10px 10px 8px #888888
+  }
+  
+  .circle {
+    left:40%; 
+    bottom: 10%;
+    border-radius: 50%;
+    position: relative;
+    width: 10%;
+    height: 10%;
+    padding: 1rem 1rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: 7px 7px 7px #888888
+  }
+  @media (max-width: 768px) {
+    .container {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      height: 500px;
+      width: 50%;
+    }
+  
+    .geom {
+      width: 90px;
+      height: 167px;
+      background-color: #007cef;
+    }
+    .circle {
+        bottom: 98%;
+        border-radius: 50%;
+        width: 10%;
+        height: 10%;
+        padding: 1rem 1rem;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid white;
+        font-weight: bold;
+        font-size: 2rem;
+        box-shadow: 7px 7px 7px #888888;
+        position: absolute;
+        left: 30%; 
+      }
+      .all p{
+        padding-bottom: 0.7rem;
+      }
+
+  }
+  
